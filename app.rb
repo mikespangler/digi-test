@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'aws-sdk'
 require 'pry'
-require File.expand_path("./", __FILE__)
 
 get '/' do
+  'hello world'
   # cf = AWS::CloudFront.new(
   #   :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
   #   :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'])
