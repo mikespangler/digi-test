@@ -1,9 +1,4 @@
-require 'sinatra'
-require 'aws-sdk'
-require 'pry'
-
 get '/' do
-  'hello world'
   # cf = AWS::CloudFront.new(
   #   :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
   #   :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'])
