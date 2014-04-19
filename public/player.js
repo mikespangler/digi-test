@@ -8,6 +8,7 @@ $( document ).ready(function() {
     // Set width to fill parent element, Set height
     player.width(width).height( width * aspectRatio );
   }
-    resizeVideoJS(player, aspectRatio); // Initialize the function
-    window.onresize = resizeVideoJS; // Call the function on resize
+  resizeVideoJS(player, aspectRatio); // Initialize the function
+  window.onresize = resizeVideoJS; // Call the function on resize
+  player.on("ended", function(){ window.location = "/message"; }, false);
 });

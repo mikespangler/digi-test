@@ -1,5 +1,4 @@
 get '/' do
-  'hello world'
   # cf = AWS::CloudFront.new(
   #   :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
   #   :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'])
@@ -8,4 +7,8 @@ get '/' do
   # video = bucket.objects['oceans.mp4']
   #video = "https://s3-us-west-2.amazonaws.com/beauty-test/oceans.mp4"
   erb :index#, :locals => { :video => video }
+end
+
+get '/message' do
+  erb :message
 end
