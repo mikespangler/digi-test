@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bindery Test</title>
+    <link href="video-js.css" rel="stylesheet" type="text/css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="video.js"></script>
+    <script src="player.js"></script>
+  </head>
+  <body>
+    <video id="beauty_video" class="video-js vjs-default-skin" controls autoplay preload="auto" data-setup="{}">
+      <source src=<%=video_url%> type='video/mp4' />
+      <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+      <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+    </video>
+  </body>
+</html>

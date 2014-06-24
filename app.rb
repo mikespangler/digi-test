@@ -8,5 +8,5 @@
 get '/:filename' do
   filename = params[:filename]
   video_url = "d1c6ne8ajn3h3m.cloudfront.net/#{filename}"
-  erb :player, :locals => { :video_url => video_url }
+  erb :player, locals: { video_url: video_url }
 end
